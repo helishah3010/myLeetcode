@@ -1,4 +1,4 @@
-//Get array which has all the ids
+//Get array which has all the ids. You can use these to return values as well
 
 var officers = [
     { id: 1, name: 'Captain Piett' },
