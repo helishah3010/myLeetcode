@@ -1,12 +1,15 @@
-// remove duplicates from array
+let nums = [4,0,0,1,1,1,2,2,3,3,4];
+let store = [];
 
-let arr = [1,2,1,4,5];
-let uniArr = [arr[0]];
-
-for(let i=1;i<arr.length;i++){
-  if(!uniArr.includes(arr[i])){
-    uniArr.push(arr[i]);
+function removeDup(nums) {
+  for(let i=0;i<nums.length;i++){
+    if(store.includes(nums[i])){
+      
+    } else {
+      store.push(nums[i]);
+    }
   }
+  return store;
 }
 
-console.log(uniArr);
+console.log(removeDup(nums));

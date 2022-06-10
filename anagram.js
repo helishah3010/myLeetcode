@@ -1,7 +1,44 @@
 let one = "listen";
 let two = "list";
 
-/*
+/* 
+Best approach - using object - O (2n)
+
+let s = "anagram";
+let t = "nagaram";
+let store = {};
+let tArr = t.split('');
+
+function isAnagram(s,t) {
+  if(s.length !== t.length){
+    return false;
+  }
+  s.split('').forEach(element => {
+    if(store[element]){
+      store[element]++;
+    } else{
+      store[element] = 1;
+    }
+  });
+// foreach loop does not work if you want to return something
+  for(const element of tArr) {
+    if(element in store){   
+
+    } else {
+      //console.log(element);
+      return false;
+    }    
+  }
+  return true;
+}
+
+console.log(isAnagram(s,t));
+
+*/
+
+
+
+/* using sorting in-built methods
 1. Length of both should be same
 2. sort both strings and compare if they are same
  
@@ -18,11 +55,11 @@ if(one.length!=two.length){
   }
 }
 */
-//without using in-built methods
-/*
+
+/* with using includes in-built methods
 We will take each element from arr1 and if it is present in arr2, then remove that element from arr2.
 If modification of array is not allowed then this approach is not ok
-*/
+
  if(one === two) {
    console.log("anagram");
  }else if(one.length != two.length){
@@ -43,7 +80,7 @@ If modification of array is not allowed then this approach is not ok
     }
 
  }
-  
+  */
 
 
 
