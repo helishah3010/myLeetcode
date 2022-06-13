@@ -3,7 +3,6 @@ let two = "list";
 
 /* 
 Best approach - using object - O (2n)
-
 let s = "anagram";
 let t = "nagaram";
 let store = {};
@@ -22,8 +21,11 @@ function isAnagram(s,t) {
   });
 // foreach loop does not work if you want to return something
   for(const element of tArr) {
-    if(element in store){   
-
+    if(element in store){
+      if(store[element] == 0){
+        return false;
+      }   
+      store[element]-= 1;
     } else {
       //console.log(element);
       return false;
@@ -33,7 +35,6 @@ function isAnagram(s,t) {
 }
 
 console.log(isAnagram(s,t));
-
 */
 
 

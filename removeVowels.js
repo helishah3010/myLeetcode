@@ -13,13 +13,6 @@ function disemvowel(str) {
   return strArr.join('');
 }
 
-
-
-
-
-
-
-
 /* n2 complexity so use above method 
 const vowels = ["a", "e", "i", "o", "u"];
 let splitstr = str.split('');

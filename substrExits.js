@@ -4,7 +4,7 @@ you can do this by doing include and Regex. But with Regex, you cannot find the 
 
 here we will compare each element of subStr and if match is found, we will store it. When the next letter is not a match, we will erase the store. 
 */
-let str = "loevetleetcode";
+let str = "lotifleetcode";
 let subStr = "leet";
 let i = 0; 
 let j = 0;
@@ -15,7 +15,7 @@ while(i<str.length && j< subStr.length){
     if(store!=""){
       store ="";
     }
-    i++;
+    //i++;   -> so that lleetcode
     j=0;
   } 
   else{

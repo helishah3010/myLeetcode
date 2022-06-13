@@ -1,6 +1,19 @@
 //rotate array with k elemt steps
 //there are multiple approach but this one is good from space complexity wise
 
+/* without using shift  - O(1)*/
+let nums = [-1,-100,3,99];
+const k = 2;
+let firstpart = nums.splice(0, nums.length-k);
+ 
+ nums.push(...firstpart);
+ console.log(nums);
+
+
+
+
+
+/* With using shift - O(n)
 let nums = [-1,-100,3,99];
 const k = 2;
 let pick = 0;
@@ -9,6 +22,10 @@ for(let i=0;i<nums.length-k;i++){
   nums.push(pick); 
 }
 console.log(nums);
+
+ */ 
+
+ 
 
 /* good time complexity but more space complexity
 let nums = [1,2,3,4,5,6,7];
