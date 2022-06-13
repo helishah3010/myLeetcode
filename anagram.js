@@ -2,7 +2,7 @@ let one = "listen";
 let two = "list";
 
 /* 
-Best approach - using object - O (2n)
+Best approach - using object - O (2n)*/
 let s = "anagram";
 let t = "nagaram";
 let store = {};
@@ -35,7 +35,7 @@ function isAnagram(s,t) {
 }
 
 console.log(isAnagram(s,t));
-*/
+
 
 
 
