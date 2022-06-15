@@ -3,7 +3,7 @@ let store = [];
 
 function removeDup(nums) {
   for(let i=0;i<nums.length;i++){
-    if(store.includes(nums[i])){
+    if(store.includes(nums[i])){  //can use indexOf
       
     } else {
       store.push(nums[i]);
@@ -13,3 +13,10 @@ function removeDup(nums) {
 }
 
 console.log(removeDup(nums));
+
+/* 
+Other methods
+- Set() > only has unique values
+- if element present > then replace it with empty string
+- 
+*/

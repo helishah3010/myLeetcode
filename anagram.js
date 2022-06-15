@@ -1,5 +1,5 @@
-let one = "listen";
-let two = "list";
+let one = "anagram";
+let two = "angaram";
 
 /* 
 Best approach - using object - O (2n)*/
@@ -22,7 +22,7 @@ function isAnagram(s,t) {
 // foreach loop does not work if you want to return something
   for(const element of tArr) {
     if(element in store){
-      if(store[element] == 0){
+      if(store[element] == 0){   //so that anagrm
         return false;
       }   
       store[element]-= 1;

@@ -26,13 +26,6 @@ function isPalin(arr){
 console.log(isPalin(arr))
 
 
-
-
-
-
-
-
-
 /* for better time and space complexity use above code. 
 const str = "02/02/2020";
 let processedStr = str.replace(/\//g, '');

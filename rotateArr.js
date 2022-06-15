@@ -9,10 +9,6 @@ let firstpart = nums.splice(0, nums.length-k);
  nums.push(...firstpart);
  console.log(nums);
 
-
-
-
-
 /* With using shift - O(n)
 let nums = [-1,-100,3,99];
 const k = 2;

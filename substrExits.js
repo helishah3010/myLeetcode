@@ -5,7 +5,7 @@ you can do this by doing include and Regex. But with Regex, you cannot find the 
 here we will compare each element of subStr and if match is found, we will store it. When the next letter is not a match, we will erase the store. 
 */
 let str = "lotifleetcode";
-let subStr = "leet";
+let subStr = "leet"; //lleetcode
 let i = 0; 
 let j = 0;
 let store = "";

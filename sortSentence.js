@@ -1,6 +1,5 @@
 const t0 = performance.now();
 
-
 let s = "is2 sentence4 This1 a3";
 //output : This is a  sentence
 let arr = s.split(' ');
